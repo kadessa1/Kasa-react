@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import "./style.css";
 import Home from "../../pages/home";
 import Apartment from "../../pages/apartment";
 import About from '../../pages/about';
@@ -8,7 +9,7 @@ import Footer from '../footer';
 
 function Router() {
     return (
-        <div>
+        <div className='page'>
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
