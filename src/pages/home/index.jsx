@@ -1,10 +1,12 @@
 import Banner from "../../components/banner"
+import Card from "../../components/card"
 
 function Home() {
     return (
-        <div>
+        <main>
             <Banner page="home" />
-        </div>
+            <Card />
+        </main>
     )
 };
 
