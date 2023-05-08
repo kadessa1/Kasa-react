@@ -1,8 +1,11 @@
+import Collapse from "../../components/collapse";
+
 function Apartment() {
     return (
-        <div>
+        <main>
             <h1>Appartements</h1>
-        </div>
+            <Collapse page='apartment' />
+        </main>
     )
 };
 
