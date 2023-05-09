@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import arrowPrev from '../../assets/pictures/arrow-prev.png';
 import arrowNext from '../../assets/pictures/arrow-next.png';
-import './style.css';
+import styles from './style.module.css';
 
 function Slideshow({pictures, picturesLength}) {
     const [index, setIndex] = useState(0);
@@ -13,9 +13,9 @@ function Slideshow({pictures, picturesLength}) {
     };
     if (picturesLength === 1) {
         return (
-            <div className='carrousel-container'>
+            <div className={styles.carrousel_container}>
                 <img
-                    className='slide'
+                    className={styles.slide}
                     src={pictures[index]}
                     alt="Visuel de l'appartement"
                     key={`Slideshow-${index}`}
@@ -24,28 +24,28 @@ function Slideshow({pictures, picturesLength}) {
         );
     } else if (picturesLength > 0) {
         return (
-            <div className='carrousel-container'>
+            <div className={styles.carrousel_container}>
                 <img
-                    className='slide'
+                    className={styles.slide}
                     src={pictures[index]}
                     alt="Visuel de l'appartement"
                     key={`Slideshow-${index}`}
                 />
-                <div className='arrow-container'>
-                    <button className='prev' onClick={() => prevImg(index)}>
+                <div className={styles.arrow_container}>
+                    <button className={styles.prev} onClick={() => prevImg(index)}>
                         <img
                             src={arrowPrev}
                             alt='Flèche gauche'
                         />
                     </button>
-                    <button className='next' onClick={() => nextImg(index)}>
+                    <button className={styles.next} onClick={() => nextImg(index)}>
                         <img
                             src={arrowNext}
                             alt='Flèche droite'
                         />
                     </button>
                 </div>
-                <p className='number'>
+                <p className={styles.number}>
                     {index + 1} / {picturesLength}
                 </p>
             </div>

@@ -1,7 +1,7 @@
-.carrousel-container{
+.carrousel_container{
     height:415px;
     position:relative;
-    margin:0 50px;
+    margin:0 5%;
 }
 
 .slide{
@@ -11,7 +11,7 @@
     object-fit:cover;
 }
 
-.arrow-container{
+.arrow_container{
     height:100%;
     width:100%;
     margin:0 auto;
@@ -67,7 +67,7 @@ button{
 
 
 @media (max-width:767px){
-    .carrousel-container{
+    .carrousel_container{
         height:255px;
         margin:0 20px;
     }
