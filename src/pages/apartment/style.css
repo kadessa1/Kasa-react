@@ -75,10 +75,18 @@
 }
 
 .collapse-title {
+    font-size: 18px;
     font-weight: 500;
 }
 
 .equipments-list {
     list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
 }
 

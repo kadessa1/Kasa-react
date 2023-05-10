@@ -11,7 +11,7 @@ function About() {
                 {aboutData.map(({ title, description }, index) => (
                     <Collapse
                         key={`${title}-${index}`}
-                        collapseTitle={<h2>{title}</h2>}
+                        collapseTitle={<h2 className="title-about-collapse">{title}</h2>}
                         collapseDescription={description}
                     />
                 ))}                       
