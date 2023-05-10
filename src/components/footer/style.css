@@ -13,7 +13,7 @@
     width: 122px;
 }
 
-p {
+.legal-footer {
     color: white;
     align-items: flex-end;
 }

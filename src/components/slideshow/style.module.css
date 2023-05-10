@@ -1,59 +1,59 @@
-.carrousel_container{
-    height:415px;
-    position:relative;
-    margin:0 5%;
+.carrousel_container {
+    height: 415px;
+    position: relative;
+    margin: 0;
 }
 
-.slide{
-    width:100%;
-    height:100%;
-    border-radius:25px;
-    object-fit:cover;
+.slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
 }
 
-.arrow_container{
-    height:100%;
-    width:100%;
-    margin:0 auto;
-    position:absolute;
-    bottom:0;
+.arrow_container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.prev{
-    margin-left:10px;
+.prev {
+    margin-left: 10px;
 }
 
-.prev:hover{
-    cursor:pointer;
+.prev:hover {
+    cursor: pointer;
 }
 
 .next {
-    margin-right:10px;
+    margin-right: 10px;
 }
 
-.next:hover{
-    cursor:pointer;
+.next:hover {
+    cursor: pointer;
 }
 
-.number{
+.number {
     font-size: 1.25rem;
-    color:#ffffff;
-    position:absolute;
-    bottom :10px;
-    display:flex;
+    color: #ffffff;
+    position: absolute;
+    bottom : 10px;
+    display: flex;
     justify-content: center;
-    width:100%;
+    width: 100%;
 }
 
 .arrow_container{
-    height:100%;
-    width:100%;
-    margin:0 auto;
-    position:absolute;
-    bottom:0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,29 +66,29 @@ button{
 
 
 
-@media (max-width:767px){
-    .carrousel_container{
-        height:255px;
-        margin:0 20px;
+@media (max-width:767px) {
+    .carrousel_container {
+        height: 255px;
+        margin: 0 20px;
     }
 
-    .slide{
-        border-radius:10px;
+    .slide {
+        border-radius: 10px;
     }    
 
     .prev, .next {
-        height:30px;
+        height: 30px;
     }
 
-    .prev{
-        margin-left:5px;
+    .prev {
+        margin-left: 5px;
     } 
 
     .next {
-        margin-right:5px;
+        margin-right: 5px;
     }
     
-    .number{
-        display:none;
+    .number {
+        display: none;
     }
 }
