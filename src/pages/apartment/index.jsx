@@ -2,6 +2,7 @@
 import { useParams } from 'react-router-dom';
 import Slideshow from "../../components/slideshow";
 import Collapse from '../../components/collapse';
+import Error from '../../components/error';
 import ApartmentsDatas from '../../assets/data/logements.json';
 import React from 'react';
 import './style.css';
@@ -19,6 +20,9 @@ function Apartment() {
         }
         return stars;
     };
+    if (!data) {
+        return <Error />
+    }
     return (
         <main>
             <Slideshow pictures={data.pictures} picturesLength={data.pictures.length} />
