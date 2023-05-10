@@ -46,6 +46,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    justify-content: flex-end;
     column-gap: 10px;
 }
 
@@ -60,3 +61,24 @@
     flex-direction: row;
     column-gap: 15px;
 }
+
+.apartment-information {
+    display: flex;
+    flex-direction: row;
+    row-gap: 76px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.collapse-left, .collapse-right {
+    width: 45%;
+}
+
+.collapse-title {
+    font-weight: 500;
+}
+
+.equipments-list {
+    list-style: none;
+}
+

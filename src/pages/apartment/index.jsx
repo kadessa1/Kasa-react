@@ -1,6 +1,7 @@
 /*import Collapse from "../../components/collapse";*/
 import { useParams } from 'react-router-dom';
 import Slideshow from "../../components/slideshow";
+import Collapse from '../../components/collapse';
 import ApartmentsDatas from '../../assets/data/logements.json';
 import React from 'react';
 import './style.css';
@@ -39,6 +40,22 @@ function Apartment() {
                     <div className='apartment-rating'>
                         {getRatingStars(data.rating)}
                     </div>
+                </div>
+            </article>
+            <article className='apartment-information'>
+                <div className='collapse-left'>
+                    <Collapse
+                        collapseTitle={<h2 className='collapse-title'>Description</h2>}
+                        collapseDescription={<p className='description'>{data.description}</p>}
+                    />                    
+                </div>
+                <div className='collapse-right'>
+                    <Collapse className='collapse-right'
+                        collapseTitle={<h2 className='collapse-title'>Equipements</h2>}
+                        collapseDescription={data.equipments.map((equipments, index) => (
+                            <li key={`${index}-${equipments}`} className='equipments-list'>{equipments}</li>
+                        ))}
+                    />
                 </div>
             </article>
         </main>
