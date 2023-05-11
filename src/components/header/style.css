@@ -25,3 +25,20 @@ a.visited {
     color: #FF6060;
     text-decoration: none;
 }
+
+@media (max-width :768px){
+    .header {
+        padding: 20px;
+    }
+
+    .logo {
+        height: 43px;
+        width: auto;
+    }
+
+    .nav-bar {
+        font-size: 12px;
+        column-gap: 10px;
+        font-weight: 500;
+    }
+}

@@ -31,3 +31,18 @@
     color: #FFFFFF;
     margin: 20px;
 }
+
+@media (max-width :768px){
+    .cards {
+        background: none;
+        grid-template-columns: 1fr;
+        margin-top: 22px;
+        margin-bottom: 22px;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .card {
+        height: 225px;
+    }
+}
