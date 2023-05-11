@@ -14,6 +14,7 @@
     display: flex;
     align-items: flex-end;
     height: 300px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .card img {
@@ -21,6 +22,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    mix-blend-mode: darken;
 }
 
 .card h2 {
