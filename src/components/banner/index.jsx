@@ -16,9 +16,9 @@ function Banner(props) {
         )
     } else if (props.page === 'about') {
         return (
-            <section className='banner'>
-                <div className='banner-frame'>
-                    <img src={sliderabout} className='banner-img' alt='...' title='...' />
+            <section className='banner-about'>
+                <div className='banner-frame-about'>
+                    <img src={sliderabout} className='banner-img-about' alt='Bannière page about' title='Montagnes' />
                 </div>
             </section>
         ) 

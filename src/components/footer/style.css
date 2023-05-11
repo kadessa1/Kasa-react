@@ -16,4 +16,11 @@
 .legal-footer {
     color: white;
     align-items: flex-end;
+    font-size: 24px;
+}
+
+@media (max-width :768px){
+    .legal-footer {
+        font-size: 12px;
+    }
 }
