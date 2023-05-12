@@ -8,6 +8,7 @@ import React from 'react';
 import './style.css';
 import ratingGrey from "../../assets/pictures/rating-grey.png";
 import ratingRed from "../../assets/pictures/rating-red.png";
+import Tags from '../../components/tags';
 
 function Apartment() {
     const { id } = useParams();
@@ -32,7 +33,7 @@ function Apartment() {
                     <p className='apartment-location'>{data.location}</p>
                     <div className='apartment-tags'>
                         {data.tags.map((tags, index) => (
-                            <span key={`${index}-${tags}`} className='apartment-tag'>{tags}</span>
+                            <Tags key={`${index}-${tags}`} tag={tags} />
                         ))}
                     </div>
                 </div>
