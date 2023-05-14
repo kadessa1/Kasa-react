@@ -5,7 +5,7 @@ function Home() {
     return (
         <main>
             <Banner page="home" />
-            <Card />
+            <Card page="home" />
         </main>
     )
 };
