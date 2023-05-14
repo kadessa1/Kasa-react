@@ -12,7 +12,7 @@ function About() {
                     <Collapse
                         key={`${title}-${index}`}
                         collapseTitle={<h2 className="title-about-collapse">{title}</h2>}
-                        collapseDescription={description}
+                        collapseDescription={<p className="description-about-collapse">{description}</p>}
                     />
                 ))}                       
             </section>
