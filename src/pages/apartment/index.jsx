@@ -6,21 +6,12 @@ import Error from '../../components/error';
 import ApartmentsDatas from '../../assets/data/logements.json';
 import React from 'react';
 import './style.css';
-import ratingGrey from "../../assets/pictures/rating-grey.png";
-import ratingRed from "../../assets/pictures/rating-red.png";
 import Tags from '../../components/tags';
+import Rating from '../../components/rating';
 
 function Apartment() {
     const { id } = useParams();
     const data = ApartmentsDatas.find(data => data.id === id);
-    const getRatingStars = (rating) => {
-        const stars = [];
-        for (let i = 0; i < 5; i++) {
-            const starClass = (i < rating) ? ratingRed : ratingGrey;
-            stars.push(<img src={starClass} alt='rating' key={i} className={starClass} />);
-        }
-        return stars;
-    };
     if (!data) {
         return <Error />
     }
@@ -42,9 +33,7 @@ function Apartment() {
                         <p className='apartment-host-name'>{data.host.name}</p>
                         <img className='apartment-host-picture' src={data.host.picture} alt={data.host.name}/>
                     </div>
-                    <div className='apartment-rating'>
-                        {getRatingStars(data.rating)}
-                    </div>
+                    <Rating rate={data.rating} />
                 </div>
             </article>
             <article className='apartment-information'>
