@@ -40,5 +40,6 @@ a.visited {
         font-size: 12px;
         column-gap: 10px;
         font-weight: 500;
+        text-transform: uppercase;
     }
 }
