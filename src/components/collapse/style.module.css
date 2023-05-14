@@ -6,7 +6,7 @@
     font-size: 18px;
     font-weight: 500;
     margin: 30px auto 0px auto;
-    padding:10px 15px;
+    padding: 6px 15px;
     border-radius:5px;
     display:flex;
     justify-content:space-between;
@@ -53,8 +53,19 @@
 
 @media (max-width :768px){
     .collapse_description, .collapse_title_open, .collapse_title_closed{
-        font-size: 12px;
+        margin-top: 10px;
     }
+
+    .collapse_title_closed,
+    .collapse_title_open {
+        padding: 1px 10px;
+    }
+
+    .collapse_description {
+        padding-top: 23px;
+        top: -13px;
+    }
+
     .arrow_up{
         width:18px;
         height:auto;
@@ -62,6 +73,6 @@
     .arrow_down{
         width:18px;
         height:auto;
-       
     }
+    
 }

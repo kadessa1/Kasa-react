@@ -118,4 +118,26 @@
         width: 24px;
         height: 24px;
     }
+
+    .apartment-information {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .collapse-left,
+    .collapse-right {
+        width: 100%;
+    }
+
+    .collapse-title {
+        font-size: 13px;
+    }
+
+    .equipments-list {
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
 }
