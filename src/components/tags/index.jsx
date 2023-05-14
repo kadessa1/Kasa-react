@@ -1,6 +1,6 @@
 import "./style.css";
 
-function Tags({ tag }) {
+function Tags({tag}) {
     return (
         <span className='tag'>
             {tag}
