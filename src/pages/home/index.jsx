@@ -1,5 +1,5 @@
-import Banner from "../../components/banner"
-import Card from "../../components/card"
+import Banner from "../../components/banner";
+import Card from "../../components/card";
 
 function Home() {
     return (
